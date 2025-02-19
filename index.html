@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索引擎</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active">网页</a></li>
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">图片</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">贴吧</a></li>
+                <li><a href="#">地图</a></li>
+            </ul>
+            <div class="user-info">
+                <a href="#" class="login">登录</a>
+                <a href="#" class="settings">设置</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="search-container">
+            <div class="logo">
+                <h1>搜索</h1>
+            </div>
+            <div class="search-box">
+                <div class="search-input-wrapper">
+                    <input type="text" id="searchInput" placeholder="请输入搜索内容...">
+                    <div class="search-tools">
+                        <span class="voice-search" title="语音搜索"></span>
+                        <span class="camera-search" title="拍照搜索"></span>
+                    </div>
+                </div>
+                <button id="searchButton">百度一下</button>
+            </div>
+        </div>
+        <div class="search-tabs" style="display: none;">
+            <a href="#" class="active">全部</a>
+            <a href="#">网页</a>
+            <a href="#">视频</a>
+            <a href="#">图片</a>
+            <a href="#">资讯</a>
+            <a href="#">贴吧</a>
+        </div>
+        <div id="searchResults" class="search-results"></div>
+        <div class="related-search" style="display: none;">
+            <h3>相关搜索</h3>
+            <ul id="relatedSearches"></ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">设置</a>
+                <a href="#">反馈</a>
+                <a href="#">帮助</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
